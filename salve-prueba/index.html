@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- PÁGINA DE INICIO (la que se abre en la dirección principal).
+     En la versión final NO enlazará a los días: cada día solo se abre
+     con su QR, para que se mantenga la sorpresa. -->
+<html lang="es"> <!-- "es" = idioma español (ayuda a lectores de pantalla y buscadores) -->
+<head>
+  <meta charset="utf-8"> <!-- para que se vean bien las tildes y la ñ -->
+
+  <!-- Hace que la página se adapte al ancho del celular. Sin esta línea
+       el teléfono mostraría la página diminuta, como si fuera de computador. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Le pide a Google y otros buscadores que NO listen esta página.
+       No es una cerradura: solo evita que aparezca en las búsquedas. -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Salve · Cajitas de Adviento</title> <!-- texto de la pestaña del navegador -->
+  <link rel="icon" href="assets/logo.jpg"> <!-- iconito de la pestaña -->
+  <link rel="stylesheet" href="assets/style.css"> <!-- conecta con los estilos -->
+</head>
+<body>
+  <main class="tarjeta">
+    <img class="logo" src="assets/logo.jpg" alt="Salve · Cajitas de Adviento">
+
+    <p class="mensaje">
+      Cada día de tu caja trae un código QR.<br>
+      Escanéalo para escuchar la canción y leer el mensaje de ese día.
+    </p>
+
+    <p class="nota">Página de prueba.</p>
+
+    <!-- Este botón existe solo en la prueba, para que puedas llegar al Día 1. -->
+    <p><a class="boton" href="dia-01/">Ver la página de ejemplo (Día 1)</a></p>
+  </main>
+</body>
+</html>

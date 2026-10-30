@@ -1,0 +1,139 @@
+/* ============================================================
+   ESTILOS DE SALVE
+   Este archivo lo usan TODAS las páginas (la de inicio y las de cada día).
+   Si cambias algo aquí, cambia en todas a la vez.
+   ============================================================ */
+
+/* --- 1. TIPOGRAFÍA -------------------------------------------------
+   Cormorant Garamond es una letra elegante y gratuita (licencia OFL).
+   Los archivos están dentro de la carpeta "fonts", así la página no
+   depende de Google ni de ningún servidor externo.
+   La ruta es relativa a ESTE archivo (assets/style.css). */
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; /* muestra el texto enseguida con otra letra y la cambia al cargar */
+  src: url("fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/cormorant-garamond-latin-400-italic.woff2") format("woff2");
+}
+
+/* --- 2. COLORES ----------------------------------------------------
+   Están tomados de tu logo. Se definen una sola vez aquí y se usan
+   abajo con var(--nombre). Para cambiar un color, cámbialo solo aquí. */
+:root {
+  --crema: #fbf6f0;         /* fondo (igual al del logo) */
+  --salvia: #5f7052;        /* verde oscuro: botones y títulos (se lee bien) */
+  --salvia-suave: #8a9a7b;  /* verde del logo: solo decoración */
+  --arena: #c9a27e;         /* dorado del logo: líneas y bordes */
+  --texto: #3f4a36;         /* color del texto normal */
+  --gris: #7a7a72;          /* texto de "pendiente" */
+}
+
+/* --- 3. BASE -------------------------------------------------------- */
+* { box-sizing: border-box; }   /* el ancho incluye el relleno: evita sorpresas */
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--texto);
+  font-family: "Cormorant Garamond", Georgia, serif; /* si falla la letra, usa Georgia */
+  font-size: 20px;
+  line-height: 1.5;
+  font-variant-numeric: lining-nums; /* números de altura normal: que el 1 no parezca una letra */
+}
+
+/* La "tarjeta" es la columna central. En celular ocupa todo el ancho;
+   en computador nunca pasa de 480 px para que se lea cómodo. */
+.tarjeta {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 28px 22px 44px;
+  text-align: center;
+}
+
+/* --- 4. LOGO -------------------------------------------------------- */
+.logo { width: 100%; max-width: 320px; height: auto; }
+.logo-chico { max-width: 150px; }   /* versión pequeña para las páginas de cada día */
+
+/* --- 5. TEXTOS ------------------------------------------------------ */
+.dia {
+  margin: 18px 0 4px;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--salvia);
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--salvia);
+}
+.tema { margin: 6px 0 26px; font-style: italic; }
+h2 {
+  margin: 0 0 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--salvia-suave);
+}
+.mensaje { margin: 18px 0; }
+.nota { font-size: 0.9rem; color: var(--gris); }
+
+/* --- 6. BLOQUES (Para meditar / Para escuchar) ---------------------- */
+.bloque { border-top: 1px solid var(--arena); padding: 24px 0; }
+.cita-ref { margin: 0 0 8px; font-size: 1.6rem; font-weight: 600; }
+.reflexion { margin: 14px 0 0; }
+.cancion { margin: 0 0 14px; font-size: 1.15rem; }
+
+/* Las cajas con borde punteado marcan lo que todavía hay que rellenar. */
+.pendiente {
+  padding: 12px 14px;
+  border: 1px dashed var(--arena);
+  border-radius: 10px;
+  color: var(--gris);
+  font-style: italic;
+}
+
+/* --- 7. BOTONES Y ENLACES ------------------------------------------- */
+.boton {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 14px 24px;
+  border-radius: 999px;          /* bordes totalmente redondos */
+  background: var(--salvia);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.boton:hover { background: #4d5c42; }
+.alternativo { margin: 14px 0 0; font-size: 0.95rem; }
+.alternativo a { color: var(--salvia); }
+
+/* Un borde visible al navegar con teclado (accesibilidad). */
+a:focus-visible { outline: 3px solid var(--arena); outline-offset: 3px; }
+
+/* --- 8. PIE --------------------------------------------------------- */
+footer {
+  border-top: 1px solid var(--arena);
+  padding-top: 20px;
+  font-size: 0.95rem;
+  color: var(--salvia);
+}

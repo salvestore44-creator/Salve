@@ -1,0 +1,40 @@
+SALVE · PÁGINA DE PRUEBA (DÍA 1)
+
+QUÉ HAY EN ESTA CARPETA
+  index.html            Página de inicio.
+  dia-01/index.html     Página del Día 1 (la de ejemplo).
+  assets/style.css      Colores, letras y diseño de todas las páginas.
+  assets/logo.jpg       Tu logo.
+  assets/fonts/         La letra (Cormorant Garamond, licencia libre OFL).
+  .nojekyll             Archivo vacío. Le dice a GitHub que no procese la carpeta.
+                        (Puede estar oculto en tu computador: es normal.)
+
+CÓMO SUBIRLA A NETLIFY (más fácil)
+  1. Crea una cuenta gratis en netlify.com.
+  2. Entra a app.netlify.com/drop.
+  3. Arrastra la carpeta "salve-prueba" completa a esa página.
+  4. En unos segundos te da un enlace tipo  algo-raro.netlify.app
+  5. Abre ese enlace en tu celular. El Día 1 está en  /dia-01/
+     (Netlify te deja cambiar la parte "algo-raro" en
+      Site configuration > Change site name.)
+
+CÓMO SUBIRLA A GITHUB PAGES
+  1. Crea una cuenta gratis en github.com.
+  2. Arriba a la derecha: "+" > New repository.
+     Nombre: salve-prueba. Marca "Public". Create repository.
+  3. En la página del repositorio: "uploading an existing file".
+  4. Arrastra el CONTENIDO de la carpeta salve-prueba (index.html, dia-01,
+     assets, robots.txt, .nojekyll), no la carpeta en sí. Espera que termine.
+     Abajo: "Commit changes".
+  5. Settings > Pages. En "Build and deployment" elige:
+     Source: Deploy from a branch. Branch: main, carpeta / (root). Save.
+  6. Espera 1 o 2 minutos y refresca. Arriba aparecerá tu enlace:
+        https://TUUSUARIO.github.io/salve-prueba/
+     El Día 1 está en  /dia-01/
+  (Los nombres de los menús pueden cambiar un poco con el tiempo.)
+
+QUÉ FIJARTE AL COMPARAR
+  - ¿Se ve igual en tu celular? ¿Se ve bien el logo y la letra?
+  - ¿Cuánto te tomó subirla? ¿Te pareció más cómodo uno u otro?
+  - ¿El enlace te gusta? Es el que irá impreso en el QR.
+  - Pon el botón "Escuchar..." a prueba cuando haya un enlace real.
