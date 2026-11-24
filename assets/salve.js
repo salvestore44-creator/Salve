@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var fecha = document.documentElement.dataset.fecha;
   if (f && fecha) {
     var k = dias(hoy, fecha);
-    f.textContent = k > 0 ? (k === 1 ? "Falta 1 día." : "Faltan " + k + " días.") : "";
+    f.textContent = k > 0 ? (k === 1 ? "Se abre mañana." : "Se abre en " + k + " días.") : "";
   }
 
   /* Sorpresas */
